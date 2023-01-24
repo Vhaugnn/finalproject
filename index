@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fontsgstatic.com">
+    <link rel="stylesheet" href="https:fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesom/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <script src="app.js"></script>
+    
+</head>
+
+<body>
+   <section>
+    <div class="name"> 
+        <h2>Vhaugnn <br> Diane</h2>
+        <h2>Half student <br> Half zombie</h2>
+    </div>
+
+    <div class="below">
+        <div class="carousel">
+            <div class="img"></div>
+
+            <button type="submit"
+            class="btnleft"
+            data-carousel-button="prev"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel__track-container">
+            <ul class="carousel__track" data-slides>
+              <li class="carousel__slide" data-active>
+                <img class="carousel__image" src="img/IMG_4425.jpg" alt="" />
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="img/IMG2.jpg" alt="" />
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="" alt="" />
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit"
+            class="carousel__button carousel__button--right"
+            data-carousel-button="next"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          
+
+          <div class="carousel__nav">
+            <button class="carousel__indicator" data-active></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
+
+          <div class="thumbnail__container">
+            <ul class="thumbnail__track">
+              <li class="thumbnail__slides">
+                <img
+                  class="thumbnail__image thumbnail__image--1"
+                  src=""
+                  alt=""
+                />
+              </li>
+              <li class="thumbnail__slides">
+                <img
+                  class="thumbnail__image thumbnail__image--2"
+                  src=""
+                  alt=""
+                />
+              </li>
+              <li class="thumbnail__slides">
+                <img
+                  class="thumbnail__image thumbnail__image--3"
+                  src=""
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="more">
+        <div class="less"><span>About Me</span></div>
+        <div class="more">
+          <p>
+            I am 20 and currently in my 2nd year of college taking the course ACT. 
+            I was 15 when I first got paid for selling concert tickets. My first salary was 1,000 and I still remember how I spent it all. I bought 300 worth of heels and gave the remaining money to my mom. 
+            When I was in my 4th year of high school, I tried drawing stuff for others as a side job. I drew what my classmates were requesting in exchange for food. For me, I was not that talented enough to charge them big, so food was enough. 
+            In 2020, someone offered me to tutor her nephew. He was grade 5 and I tutored him in all subjects. 
+          </p>
+          <p>
+            So if you're wondering what am I doing in this course, idk. I took it simply because it's the fastest course to take in La Verdad(2 years).
+          </p>
+        </div>
+      </div>
+      <div class="less"><img src="img/IMG2.jpg" alt="" /></div>
+    </section>
+
+    <section>
+      <div class="less">
+        <div class="less"><span>My Paintings</span></div>
+        <div class="more"><img src="img/paint1.jpg" alt="" /></div>
+      </div>
+      <div class="more">
+        <div>
+          <div>
+            <img src="img/paint3.jpg" alt="" />
+            <p>The painting above is me with my mother in <br> KDR. I'm not good enough to paint faces so i <br> kept it like that.
+              I gifted it for her birthday, and thankfully, she liked it.</p>
+            <br />
+            <p>
+              
+            </p>
+          </div>
+          <div>
+            <img src="img/paint2.jpg" alt=""  />
+            <p>Of course, there's also for my dad. <br>
+              I rushed doing this painting tho, <br>because I was 
+              too busy in school, but <br> my  father's birthday was like 
+              tommorrow. <br>It feels like there's also a deadline
+              when I made this.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="more">
+        <div class="less">
+          <p>That's snow, my first ever dog.</p>
+        </div>
+        <div class="more"><img src="img/snow.jpg" alt="" /></div>
+      </div>
+      <div class="less">
+        <div class="more"><img src="img/mimao.jpg" alt="" /></div>
+        <div class="less">
+          <p>That's mimao, our spoiled and always hungry cat, lol.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <div class="more">
+          <img src="img/324948773_1512675939143430_7718889362393046778_n.jpg" alt="" />
+        </div> <p>It's just me and my messy hair.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="less">
+        <div class="half">
+          <img src="img/photo.jpg" alt="" />
+        </div><p>My favorite sky photography.</p>
+      </div>
+    </section>
+  </body>
+</html>
+
+
+
+        </div>
+    </div>
+
+   </section>
+   <script src="app.js"></script>
+   
+</body>
+</html>
