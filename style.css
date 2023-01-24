@@ -1,0 +1,563 @@
+*{
+    padding: 3px 3px 3px 3px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(178, 199, 230);
+}
+
+body section:nth-child(1){
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(178, 199, 230);
+}
+
+section .name{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38vh;
+}
+
+section div h2:nth-child(1){
+    font-size: 4rem;
+
+}
+
+section div h2:nth-child(2){
+    font-size: 1rem;
+    
+}
+
+section .below{
+    height: 62%;
+    padding: 10px;
+    max-width: 1000px;
+    box-shadow: 0px 0px 3px 1px #2a272778;
+    margin: auto
+}
+
+.carousel{
+    position: relative;
+    height: 62vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+
+
+.over{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(231, 128, 220, 0.148);
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 0 1rem .5rem rgba(148, 67, 121, 0.3);
+}
+
+.carousel{
+    position: relative;
+    height: 62vh;
+    width: 100%;
+}
+
+.carousel__image{
+    display: block;
+    width: 100vw;
+    height: 62vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel__track-container{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 400ms ease-in;
+}
+
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+    transition-delay: 400ms;
+}
+
+.carousel__slide[data-active]{
+    opacity: 1;
+    transition-delay: 0;
+}
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    font-size: 3.5rem;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+}
+
+.carousel__button:hover{
+    background-color: rgba(61, 53, 53, 0.3);
+    color: white;
+}
+
+.carousel__button i{
+    transition: scroll .2s ease ;
+}
+
+.btnleft i:hover{
+    animation: button_left .5s 2;
+}
+
+.carousel__button--right i:hover{
+    animation: button_right .5s 2;
+}
+
+.carousel__button--right{
+    right: 1.5rem;
+}
+
+.btnleft{
+    left: 1.5rem;
+}
+
+@keyframes button_left{
+    0%{
+        opacity: .8;
+        transform: translateX(-20%);
+    }
+    50%{
+        opacity: .5;
+        transform: translateX(20%);
+    }
+    100%{
+        opacity: .2;
+        transform: translateX(-20%);
+    }
+}
+
+@keyframes button_right{
+    0%{
+        opacity: .8;
+        transform: translateX(20%);
+    }
+    50%{
+        opacity: .5;
+        transform: translateX(-20%);
+    }
+    100%{
+        opacity: .2;
+        transform: translateX(20%);
+    }
+}
+
+.carousel__nav{
+    display: flex;
+    justify-content: center;
+    gap: .75rem;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1%;
+}
+
+.carousel__indicator{
+    border: 0;
+    background: rgba(255, 255, 255, 0.5);
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel__indicator[data-active]{
+    background: rgba(0, 0, 0, 0.75);
+    transition: all 400ms ease;
+}
+
+/* thumbnail */
+
+.thumbnail__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.thumbnail__image{
+    height: 4rem;
+    border: 1px solid white;
+    box-shadow: 0 0 0 .2rem rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+}
+
+.thumbnail__image[data-active]{
+    visibility: visible;
+}
+
+.thumbnail__image--1{
+    position: absolute;
+    bottom: 5%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.thumbnail__image--2{
+    position: absolute;
+    bottom: 5%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.thumbnail__image--3{
+    position: absolute;
+    bottom: 5%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+
+/* section 2 */
+body section:nth-child(2){
+    display: flex;
+    padding: 1rem;
+}
+
+body section:nth-child(2) div.less{
+    width: 38%;
+    height: 100%;
+    padding: 2rem;
+}
+
+body section:nth-child(2) div.less img{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1rem .5rem rgba(0, 0, 0, 0.3);
+    transition: all .7s;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+body section:nth-child(2) div.less img:hover{
+    box-shadow: 0 0 1rem .5rem rgba(0, 0, 0, 0.5);
+}
+
+body section:nth-child(2) div.more{
+    width: 62%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+body section:nth-child(2) div.more .less{
+    width: 100%;
+    height: 38%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 2rem;
+}
+
+body section:nth-child(2) div.more .more{
+    width: 100%;
+    height: 62%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 3rem;
+    font-weight: 300;
+    gap: 1rem;
+}
+
+
+body section:nth-child(2) div.more .more p{
+    font-size: 1.25rem;
+    width: 50%;
+}
+
+
+/* section 3 */
+body section:nth-child(3){
+    display: flex;
+}
+
+body section:nth-child(3) div.less{
+    width: 38%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+body section:nth-child(3) div.less .less{
+    height: 38%;
+    display: flex;
+    justify-content:  end;
+    padding: 0;
+}
+
+body section:nth-child(3) div.less .less span{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .125rem;
+}
+
+body section:nth-child(3) div.less .more{
+    height: 62%;
+    display: flex;
+    align-items: end;
+    width: 100%;
+    padding: 0;
+}
+
+body section:nth-child(3) div.less .more img{
+    width: 100%;
+    height: 98%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 1rem .5rem rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all .7s;
+}
+
+body section:nth-child(3) div.less .more img:hover{
+    box-shadow: 0 0 1rem .5rem rgba(0, 0, 0, 0.5);
+}
+
+body section:nth-child(3) div.more{
+    width: 62%;
+    height: 100%;
+    padding: 2rem;
+}
+
+body section:nth-child(3) div.more > div{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    padding: 6rem 1rem;
+    text-align: start;
+}
+
+body section:nth-child(3) div.more > div img{
+    width:100% ;
+    height: 38vh;
+    object-fit: cover;
+    object-position: center;
+}
+body section:nth-child(6){
+    padding: 2rem 1rem;
+    display: flex;
+}
+
+body section:nth-child(6) div.more{
+    width: 62%;
+    height: 100%;
+    padding: 3rem 1rem;
+}
+
+body section:nth-child(6) div.less{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    padding: 3rem 1rem;
+    flex-direction: column;
+}
+
+body section:nth-child(6) div.more span{
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+body section:nth-child(6) div.less .half{
+    width: 100%;
+    height: 100%;
+}
+
+body section:nth-child(6) div.less .half img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;    
+}
+
+body section:nth-child(6) div.less .half:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+body section:nth-child(6) div.less .half:nth-child(2) div > span{
+    display: block;    
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 1.25rem;
+    padding: .25rem;
+}
+
+body section:nth-child(4){
+    display: flex;
+    padding: 6rem 2rem 0 2rem;
+    gap: 4rem;
+}
+
+body section:nth-child(4) div.more{
+    height: 100%;
+    width: 62%;
+    padding: 2rem 0;
+    display: flex;
+}
+
+body section:nth-child(4) div.more .less{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    padding: 5rem 4rem;
+    align-items: start;
+    text-align: start;
+}
+
+body section:nth-child(4) div.more .more{
+    width: 62%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+body section:nth-child(4) div.more .more img{
+    width: 100%;
+    height: 72%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+body section:nth-child(4) div.less {
+    flex-direction: column;
+    width: 38%;
+    height: 100%;
+    padding: 2rem 0;
+}
+
+body section:nth-child(4) div.less .less{
+    width: 100%;
+    height: 28%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding-top: 1rem;
+}
+
+body section:nth-child(4) div.less .less p{
+    width: 50%;
+}
+
+body section:nth-child(4) div.less .more{
+    width: 100%;
+    height: 72%;
+    align-items: end;
+    padding: 0;
+}
+
+body section:nth-child(4) div.less .more img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+}
+
+/* section 5 */
+body section:nth-child(5){
+    padding: 2rem;
+    display: flex;
+}
+
+body section:nth-child(5) span{
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+body section:nth-child(5) div.more{
+    width: 62%;
+    height: 100%;
+    display: flex;
+    padding: 2rem 1rem;
+}
+
+body section:nth-child(5) div.more p{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    width: 95%;
+}
+
+body section:nth-child(5) div.less{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    padding: 0;
+}
+
+body section:nth-child(5) div.less .less{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    width: 38%;
+    height: 100%;
+    padding: 1rem ;
+}
+
+body section:nth-child(5) div.less .less span{
+    font-size: 1rem; 
+}
+
+body section:nth-child(5) div.less .more{
+    width: 62%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: end;
+    padding: 1rem 0;
+}
+
+body section:nth-child(5) div.more img{  
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: 0 0;
+}
